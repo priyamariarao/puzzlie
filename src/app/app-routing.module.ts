@@ -1,11 +1,54 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule}  from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {UserComponent} from './user/user.component';
+import {LoginComponent} from './login/login.component';
+import { Level1Component } from './level1/level1.component';
+import { Level2Component } from './level2/level2.component';
+import { Level3Component } from './level3/level3.component';
+import { Level4Component } from './level4/level4.component';
+import { Level5Component } from './level5/level5.component';
+import { Level6Component } from './level6/level6.component';
+import { Level7Component } from './level7/level7.component';
+import { Level8Component } from './level8/level8.component';
+import { Level9Component } from './level9/level9.component';
+import { Level10Component } from './level10/level10.component';
+import { Level11Component } from './level11/level11.component';
+import { Level12Component } from './level12/level12.component';
+import { Level13Component } from './level13/level13.component';
+import { Level14Component } from './level14/level14.component';
+import { Level15Component } from './level15/level15.component';
+import { RegisterComponent } from './register/register.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
-
-const routes: Routes = [];
-
+const routes: Routes = [
+  { path: 'user', component: UserComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'level1', component: Level1Component },
+  { path: 'level2', component: Level2Component },
+  { path: 'level3', component: Level3Component },
+  { path: 'level4', component: Level4Component },
+  { path: 'level5', component: Level5Component },
+  { path: 'level6', component: Level6Component },
+  { path: 'level7', component: Level7Component },
+  { path: 'level8', component: Level8Component },
+  { path: 'level9', component: Level9Component },
+  { path: 'level10', component: Level10Component },
+  { path: 'level11', component: Level11Component },
+  { path: 'level12', component: Level12Component },
+  { path: 'level13', component: Level13Component },
+  { path: 'level14', component: Level14Component },
+  { path: 'level15', component: Level15Component },
+  { path: 'register', component: RegisterComponent },
+  { path: 'leaderboard', component: LeaderboardComponent },
+  {path : '', component : LoginComponent}
+];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ],
+  declarations: []
 })
 export class AppRoutingModule { }

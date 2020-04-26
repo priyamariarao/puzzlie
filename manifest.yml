@@ -1,0 +1,8 @@
+# App Manifest
+applications:
+- name: puzzlie
+  random-route: true
+  buildpacks:
+   - https://github.com/cloudfoundry/staticfile-buildpack
+  path: ./dist/puzzlie
+  command: "$HOME/boot.sh"

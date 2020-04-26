@@ -1,0 +1,81 @@
+<style>
+.center {
+  padding: 11.7% 0 3% 0;
+  text-align: center;
+  height: 70vh;
+
+}
+
+.label {
+  color: blue;
+  padding: 5px;
+}
+
+</style>
+
+<div class="center" style="background-image: url('assets/img/bg.jpg');">
+<br>
+
+  <mat-card class="example-card" style='width:20%; left:40%;  padding: 1% 0 1% 0'>
+
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0" align="center">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Team Name" [(ngModel)]="username" name="username" maxlength="20" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Member IBM email" [(ngModel)]="name1" name="name1"  type="email" ngModel email required maxlength="50">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Member IBM email" [(ngModel)]="name2" type="email" name="name2" ngModel email maxlength="50">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Member IBM email"  [(ngModel)]="name3" type="email" name="name3" ngModel email maxlength="50">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Member IBM email"  [(ngModel)]="name4" type="email" name="name4" ngModel email maxlength="50">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Member IBM email"  [(ngModel)]="name5" type="email" name="name5" ngModel email maxlength="50">
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td><mat-form-field class="example-full-width">
+              <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required maxlength="20">
+            </mat-form-field></td>
+          </tr></table>
+      </form>
+    </mat-card-content>
+    <label class="label">{{ message }}</label>
+    <mat-card-actions>
+      <button mat-raised-button (click)="register()" color="primary">Register</button>
+      <button mat-raised-button (click)="login()" color="primary">Login</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+</div>
